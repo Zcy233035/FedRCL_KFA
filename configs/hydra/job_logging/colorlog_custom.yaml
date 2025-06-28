@@ -1,18 +1,28 @@
-defaults:
-  - colorlog
-
-
+version: 1
 formatters:
-  colorlog:
+  custom:
     (): colorlog.ColoredFormatter
     datefmt: '%m-%d %H:%M:%S'
-    format: '%(green)s%(asctime)s%(reset)s %(blue)s%(name)s %(process)d%(reset)s %(log_color)s%(message)s'
+    format: '%(green)s%(asctime)s%(reset)s %(blue)s%(name)s[%(process)d]%(reset)s %(log_color)s%(message)s'
     log_colors:
       DEBUG: cyan
       INFO: black
       WARNING: yellow
       ERROR: red
       CRITICAL: red
-        
 
+handlers:
+  console:
+    class: logging.StreamHandler
+    formatter: custom
+    stream: ext://sys.stdout
+  file:
+    class: logging.FileHandler
+    formatter: custom
+    filename: ${hydra.job.name}.log
+
+root:
+  level: INFO
+  handlers: [console, file] 
+        
 disable_existing_loggers: false

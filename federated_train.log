@@ -1,0 +1,270 @@
+[32m06-28 18:57:36[0m [34mtrainers.base_trainer[7080][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:01:30[0m [34mtrainers.base_trainer[15140][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:01:32[0m [34mtrainers.base_trainer[15140][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:01:41[0m [34mtrainers.base_trainer[15140][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:01:41[0m [34mclients.base_client[15140][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:03:05[0m [34mtrainers.base_trainer[6552][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:03:07[0m [34mtrainers.base_trainer[6552][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:03:16[0m [34mtrainers.base_trainer[6552][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:03:17[0m [34mclients.base_client[6552][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:09:30[0m [34mtrainers.base_trainer[4276][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:09:31[0m [34mtrainers.base_trainer[4276][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:09:40[0m [34mtrainers.base_trainer[4276][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:09:41[0m [34mclients.base_client[4276][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:09:44[0m [34mclients.base_client[4276][0m [30mClass counts : [147  74  72  37  35  23  17  15  13  12   9   8   7   7   6   5   5   4
+   3   1][0m
+[32m06-28 19:09:47[0m [34mclients.base_client[4276][0m [30mClass counts : [100  84  77  67  65  48  28  19   6   2   2   1   1][0m
+[32m06-28 19:09:49[0m [34mclients.base_client[4276][0m [30mClass counts : [114  67  66  48  43  37  32  29  18  10   7   7   6   6   4   2   1   1
+   1   1][0m
+[32m06-28 19:09:52[0m [34mclients.base_client[4276][0m [30mClass counts : [107  68  66  59  29  29  20  19  17  17  16  16   9   6   6   4   3   3
+   2   1   1   1   1][0m
+[32m06-28 19:09:54[0m [34mtrainers.base_trainer[4276][0m [30mGlobal epoch 0, Train End. Total Time: 13.67s[0m
+[32m06-28 19:10:47[0m [34mtrainers.base_trainer[26268][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:10:48[0m [34mtrainers.base_trainer[26268][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:10:57[0m [34mtrainers.base_trainer[26268][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:10:58[0m [34mclients.base_client[26268][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:11:01[0m [34mclients.base_client[26268][0m [30mClass counts : [147  74  72  37  35  23  17  15  13  12   9   8   7   7   6   5   5   4
+   3   1][0m
+[32m06-28 19:11:03[0m [34mclients.base_client[26268][0m [30mClass counts : [100  84  77  67  65  48  28  19   6   2   2   1   1][0m
+[32m06-28 19:11:06[0m [34mclients.base_client[26268][0m [30mClass counts : [114  67  66  48  43  37  32  29  18  10   7   7   6   6   4   2   1   1
+   1   1][0m
+[32m06-28 19:11:09[0m [34mclients.base_client[26268][0m [30mClass counts : [107  68  66  59  29  29  20  19  17  17  16  16   9   6   6   4   3   3
+   2   1   1   1   1][0m
+[32m06-28 19:11:11[0m [34mtrainers.base_trainer[26268][0m [30mGlobal epoch 0, Train End. Total Time: 13.55s[0m
+[32m06-28 19:12:19[0m [34mtrainers.base_trainer[25856][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:12:20[0m [34mtrainers.base_trainer[25856][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:12:29[0m [34mtrainers.base_trainer[25856][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:12:30[0m [34mclients.base_client[25856][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:12:33[0m [34mclients.base_client[25856][0m [30mClass counts : [147  74  72  37  35  23  17  15  13  12   9   8   7   7   6   5   5   4
+   3   1][0m
+[32m06-28 19:12:36[0m [34mclients.base_client[25856][0m [30mClass counts : [100  84  77  67  65  48  28  19   6   2   2   1   1][0m
+[32m06-28 19:12:38[0m [34mclients.base_client[25856][0m [30mClass counts : [114  67  66  48  43  37  32  29  18  10   7   7   6   6   4   2   1   1
+   1   1][0m
+[32m06-28 19:12:41[0m [34mclients.base_client[25856][0m [30mClass counts : [107  68  66  59  29  29  20  19  17  17  16  16   9   6   6   4   3   3
+   2   1   1   1   1][0m
+[32m06-28 19:12:43[0m [34mtrainers.base_trainer[25856][0m [30mGlobal epoch 0, Train End. Total Time: 13.64s[0m
+[32m06-28 19:18:11[0m [34mtrainers.base_trainer[6700][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:18:12[0m [34mtrainers.base_trainer[6700][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:18:21[0m [34mtrainers.base_trainer[6700][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:18:21[0m [34mclients.base_client[6700][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:18:25[0m [34mclients.base_client[6700][0m [30mClass counts : [147  74  72  37  35  23  17  15  13  12   9   8   7   7   6   5   5   4
+   3   1][0m
+[32m06-28 19:18:27[0m [34mclients.base_client[6700][0m [30mClass counts : [100  84  77  67  65  48  28  19   6   2   2   1   1][0m
+[32m06-28 19:18:30[0m [34mclients.base_client[6700][0m [30mClass counts : [114  67  66  48  43  37  32  29  18  10   7   7   6   6   4   2   1   1
+   1   1][0m
+[32m06-28 19:18:33[0m [34mclients.base_client[6700][0m [30mClass counts : [107  68  66  59  29  29  20  19  17  17  16  16   9   6   6   4   3   3
+   2   1   1   1   1][0m
+[32m06-28 19:18:35[0m [34mtrainers.base_trainer[6700][0m [30mGlobal epoch 0, Train End. Total Time: 13.89s[0m
+[32m06-28 19:19:59[0m [34mtrainers.base_trainer[2680][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:20:00[0m [34mtrainers.base_trainer[2680][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:20:10[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:20:10[0m [34mclients.base_client[2680][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:20:13[0m [34mclients.base_client[2680][0m [30mClass counts : [147  74  72  37  35  23  17  15  13  12   9   8   7   7   6   5   5   4
+   3   1][0m
+[32m06-28 19:20:16[0m [34mclients.base_client[2680][0m [30mClass counts : [100  84  77  67  65  48  28  19   6   2   2   1   1][0m
+[32m06-28 19:20:18[0m [34mclients.base_client[2680][0m [30mClass counts : [114  67  66  48  43  37  32  29  18  10   7   7   6   6   4   2   1   1
+   1   1][0m
+[32m06-28 19:20:21[0m [34mclients.base_client[2680][0m [30mClass counts : [107  68  66  59  29  29  20  19  17  17  16  16   9   6   6   4   3   3
+   2   1   1   1   1][0m
+[32m06-28 19:20:23[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 0, Train End. Total Time: 13.77s[0m
+[32m06-28 19:20:32[0m [34mtrainers.base_trainer[2680][0m [33m[Epoch 0] Test Accuracy: 1.36%[0m
+[32m06-28 19:20:32[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 1, Selected client : [18 29 64 92 72][0m
+[32m06-28 19:20:45[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 1, Train End. Total Time: 12.96s[0m
+[32m06-28 19:20:55[0m [34mtrainers.base_trainer[2680][0m [33m[Epoch 1] Test Accuracy: 1.14%[0m
+[32m06-28 19:20:55[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 2, Selected client : [42 96 58 14 72][0m
+[32m06-28 19:21:10[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 2, Train End. Total Time: 14.85s[0m
+[32m06-28 19:21:19[0m [34mtrainers.base_trainer[2680][0m [33m[Epoch 2] Test Accuracy: 0.94%[0m
+[32m06-28 19:21:20[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 3, Selected client : [54 84 33 53  2][0m
+[32m06-28 19:21:36[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 3, Train End. Total Time: 16.54s[0m
+[32m06-28 19:21:46[0m [34mtrainers.base_trainer[2680][0m [33m[Epoch 3] Test Accuracy: 0.98%[0m
+[32m06-28 19:21:47[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 4, Selected client : [89 56 37 46  2][0m
+[32m06-28 19:22:38[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 4, Train End. Total Time: 51.27s[0m
+[32m06-28 19:22:59[0m [34mtrainers.base_trainer[2680][0m [33m[Epoch 4] Test Accuracy: 0.76%[0m
+[32m06-28 19:23:00[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 5, Selected client : [93 49 68 23  9][0m
+[32m06-28 19:25:58[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 5, Train End. Total Time: 178.03s[0m
+[32m06-28 19:26:57[0m [34mtrainers.base_trainer[2680][0m [33m[Epoch 5] Test Accuracy: 1.06%[0m
+[32m06-28 19:26:57[0m [34mtrainers.base_trainer[2680][0m [30mGlobal epoch 6, Selected client : [93 22  6 28 80][0m
+[32m06-28 19:30:54[0m [34mtrainers.base_trainer[9048][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:30:55[0m [34mtrainers.base_trainer[9048][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:31:05[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:31:05[0m [34mclients.base_client[9048][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:31:09[0m [34mclients.base_client[9048][0m [30mClass counts : [147  74  72  37  35  23  17  15  13  12   9   8   7   7   6   5   5   4
+   3   1][0m
+[32m06-28 19:31:11[0m [34mclients.base_client[9048][0m [30mClass counts : [100  84  77  67  65  48  28  19   6   2   2   1   1][0m
+[32m06-28 19:31:14[0m [34mclients.base_client[9048][0m [30mClass counts : [114  67  66  48  43  37  32  29  18  10   7   7   6   6   4   2   1   1
+   1   1][0m
+[32m06-28 19:31:16[0m [34mclients.base_client[9048][0m [30mClass counts : [107  68  66  59  29  29  20  19  17  17  16  16   9   6   6   4   3   3
+   2   1   1   1   1][0m
+[32m06-28 19:31:19[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 0, Train End. Total Time: 14.06s[0m
+[32m06-28 19:31:28[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 0] Test Accuracy: 1.15%[0m
+[32m06-28 19:31:28[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 1, Selected client : [18 29 64 92 72][0m
+[32m06-28 19:31:42[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 1, Train End. Total Time: 13.31s[0m
+[32m06-28 19:31:52[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 1] Test Accuracy: 0.78%[0m
+[32m06-28 19:31:52[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 2, Selected client : [42 96 58 14 72][0m
+[32m06-28 19:32:05[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 2, Train End. Total Time: 13.23s[0m
+[32m06-28 19:32:15[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 2] Test Accuracy: 1.00%[0m
+[32m06-28 19:32:15[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 3, Selected client : [54 84 33 53  2][0m
+[32m06-28 19:32:29[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 3, Train End. Total Time: 13.45s[0m
+[32m06-28 19:32:38[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 3] Test Accuracy: 1.00%[0m
+[32m06-28 19:32:39[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 4, Selected client : [89 56 37 46  2][0m
+[32m06-28 19:32:52[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 4, Train End. Total Time: 13.51s[0m
+[32m06-28 19:33:02[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 4] Test Accuracy: 1.00%[0m
+[32m06-28 19:33:02[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 5, Selected client : [93 49 68 23  9][0m
+[32m06-28 19:33:16[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 5, Train End. Total Time: 13.32s[0m
+[32m06-28 19:33:25[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 5] Test Accuracy: 1.00%[0m
+[32m06-28 19:33:26[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 6, Selected client : [93 22  6 28 80][0m
+[32m06-28 19:33:41[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 6, Train End. Total Time: 14.75s[0m
+[32m06-28 19:33:51[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 6] Test Accuracy: 1.00%[0m
+[32m06-28 19:33:51[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 7, Selected client : [98  3  7 79 64][0m
+[32m06-28 19:34:06[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 7, Train End. Total Time: 14.75s[0m
+[32m06-28 19:34:17[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 7] Test Accuracy: 0.96%[0m
+[32m06-28 19:34:17[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 8, Selected client : [ 2 15 72 21 89][0m
+[32m06-28 19:34:32[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 8, Train End. Total Time: 14.90s[0m
+[32m06-28 19:34:42[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 8] Test Accuracy: 1.00%[0m
+[32m06-28 19:34:43[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 9, Selected client : [96 77 98 53 32][0m
+[32m06-28 19:34:58[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 9, Train End. Total Time: 14.75s[0m
+[32m06-28 19:35:08[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 9] Test Accuracy: 1.00%[0m
+[32m06-28 19:35:08[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 10, Selected client : [81 50 91 56 75][0m
+[32m06-28 19:35:23[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 10, Train End. Total Time: 14.29s[0m
+[32m06-28 19:35:33[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 10] Test Accuracy: 1.10%[0m
+[32m06-28 19:35:34[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 11, Selected client : [69 62 84 98 19][0m
+[32m06-28 19:35:49[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 11, Train End. Total Time: 15.50s[0m
+[32m06-28 19:36:00[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 11] Test Accuracy: 1.00%[0m
+[32m06-28 19:36:00[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 12, Selected client : [18 15 62 73  8][0m
+[32m06-28 19:36:16[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 12, Train End. Total Time: 15.08s[0m
+[32m06-28 19:36:26[0m [34mtrainers.base_trainer[9048][0m [33m[Epoch 12] Test Accuracy: 1.00%[0m
+[32m06-28 19:36:26[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 13, Selected client : [79 63 77 59 31][0m
+[32m06-28 19:36:40[0m [34mtrainers.base_trainer[9048][0m [30mGlobal epoch 13, Train End. Total Time: 13.88s[0m
+[32m06-28 19:37:05[0m [34mtrainers.base_trainer[25604][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:37:06[0m [34mtrainers.base_trainer[25604][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:37:16[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:37:16[0m [34mclients.base_client[25604][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:37:20[0m [34mclients.base_client[25604][0m [30mClass counts : [147  74  72  37  35  23  17  15  13  12   9   8   7   7   6   5   5   4
+   3   1][0m
+[32m06-28 19:37:23[0m [34mclients.base_client[25604][0m [30mClass counts : [100  84  77  67  65  48  28  19   6   2   2   1   1][0m
+[32m06-28 19:37:26[0m [34mclients.base_client[25604][0m [30mClass counts : [114  67  66  48  43  37  32  29  18  10   7   7   6   6   4   2   1   1
+   1   1][0m
+[32m06-28 19:37:29[0m [34mclients.base_client[25604][0m [30mClass counts : [107  68  66  59  29  29  20  19  17  17  16  16   9   6   6   4   3   3
+   2   1   1   1   1][0m
+[32m06-28 19:37:32[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 0, Train End. Total Time: 15.78s[0m
+[32m06-28 19:37:41[0m [34mtrainers.base_trainer[25604][0m [33m[Epoch 0] Test Accuracy: 1.19%[0m
+[32m06-28 19:37:42[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 1, Selected client : [18 29 64 92 72][0m
+[32m06-28 19:37:56[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 1, Train End. Total Time: 14.65s[0m
+[32m06-28 19:38:07[0m [34mtrainers.base_trainer[25604][0m [33m[Epoch 1] Test Accuracy: 0.94%[0m
+[32m06-28 19:38:07[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 2, Selected client : [42 96 58 14 72][0m
+[32m06-28 19:38:22[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 2, Train End. Total Time: 14.65s[0m
+[32m06-28 19:38:31[0m [34mtrainers.base_trainer[25604][0m [33m[Epoch 2] Test Accuracy: 1.02%[0m
+[32m06-28 19:38:32[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 3, Selected client : [54 84 33 53  2][0m
+[32m06-28 19:38:47[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 3, Train End. Total Time: 14.72s[0m
+[32m06-28 19:38:57[0m [34mtrainers.base_trainer[25604][0m [33m[Epoch 3] Test Accuracy: 1.00%[0m
+[32m06-28 19:38:57[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 4, Selected client : [89 56 37 46  2][0m
+[32m06-28 19:39:12[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 4, Train End. Total Time: 14.72s[0m
+[32m06-28 19:39:22[0m [34mtrainers.base_trainer[25604][0m [33m[Epoch 4] Test Accuracy: 1.17%[0m
+[32m06-28 19:39:23[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 5, Selected client : [93 49 68 23  9][0m
+[32m06-28 19:39:38[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 5, Train End. Total Time: 14.70s[0m
+[32m06-28 19:39:48[0m [34mtrainers.base_trainer[25604][0m [33m[Epoch 5] Test Accuracy: 1.00%[0m
+[32m06-28 19:39:48[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 6, Selected client : [93 22  6 28 80][0m
+[32m06-28 19:40:03[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 6, Train End. Total Time: 14.72s[0m
+[32m06-28 19:40:13[0m [34mtrainers.base_trainer[25604][0m [33m[Epoch 6] Test Accuracy: 1.22%[0m
+[32m06-28 19:40:13[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 7, Selected client : [98  3  7 79 64][0m
+[32m06-28 19:40:29[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 7, Train End. Total Time: 14.90s[0m
+[32m06-28 19:40:39[0m [34mtrainers.base_trainer[25604][0m [33m[Epoch 7] Test Accuracy: 0.91%[0m
+[32m06-28 19:40:39[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 8, Selected client : [ 2 15 72 21 89][0m
+[32m06-28 19:40:54[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 8, Train End. Total Time: 14.92s[0m
+[32m06-28 19:41:04[0m [34mtrainers.base_trainer[25604][0m [33m[Epoch 8] Test Accuracy: 1.00%[0m
+[32m06-28 19:41:05[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 9, Selected client : [96 77 98 53 32][0m
+[32m06-28 19:41:20[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 9, Train End. Total Time: 15.02s[0m
+[32m06-28 19:41:30[0m [34mtrainers.base_trainer[25604][0m [33m[Epoch 9] Test Accuracy: 1.00%[0m
+[32m06-28 19:41:30[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 10, Selected client : [81 50 91 56 75][0m
+[32m06-28 19:41:44[0m [34mtrainers.base_trainer[25604][0m [30mGlobal epoch 10, Train End. Total Time: 13.61s[0m
+[32m06-28 19:46:58[0m [34mtrainers.base_trainer[15760][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:47:00[0m [34mtrainers.base_trainer[15760][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:47:10[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:47:10[0m [34mclients.base_client[15760][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:47:15[0m [34mclients.base_client[15760][0m [30mClass counts : [147  74  72  37  35  23  17  15  13  12   9   8   7   7   6   5   5   4
+   3   1][0m
+[32m06-28 19:47:18[0m [34mclients.base_client[15760][0m [30mClass counts : [100  84  77  67  65  48  28  19   6   2   2   1   1][0m
+[32m06-28 19:47:20[0m [34mclients.base_client[15760][0m [30mClass counts : [114  67  66  48  43  37  32  29  18  10   7   7   6   6   4   2   1   1
+   1   1][0m
+[32m06-28 19:47:23[0m [34mclients.base_client[15760][0m [30mClass counts : [107  68  66  59  29  29  20  19  17  17  16  16   9   6   6   4   3   3
+   2   1   1   1   1][0m
+[32m06-28 19:47:26[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 0, Train End. Total Time: 16.10s[0m
+[32m06-28 19:47:36[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 0] Test Accuracy: 1.35%[0m
+[32m06-28 19:47:36[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 1, Selected client : [18 29 64 92 72][0m
+[32m06-28 19:47:51[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 1, Train End. Total Time: 14.21s[0m
+[32m06-28 19:48:00[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 1] Test Accuracy: 1.00%[0m
+[32m06-28 19:48:01[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 2, Selected client : [42 96 58 14 72][0m
+[32m06-28 19:48:16[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 2, Train End. Total Time: 14.92s[0m
+[32m06-28 19:48:25[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 2] Test Accuracy: 1.00%[0m
+[32m06-28 19:48:26[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 3, Selected client : [54 84 33 53  2][0m
+[32m06-28 19:48:41[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 3, Train End. Total Time: 14.84s[0m
+[32m06-28 19:48:51[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 3] Test Accuracy: 1.15%[0m
+[32m06-28 19:48:51[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 4, Selected client : [89 56 37 46  2][0m
+[32m06-28 19:49:07[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 4, Train End. Total Time: 15.05s[0m
+[32m06-28 19:49:17[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 4] Test Accuracy: 1.00%[0m
+[32m06-28 19:49:17[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 5, Selected client : [93 49 68 23  9][0m
+[32m06-28 19:49:33[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 5, Train End. Total Time: 15.27s[0m
+[32m06-28 19:49:43[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 5] Test Accuracy: 1.00%[0m
+[32m06-28 19:49:43[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 6, Selected client : [93 22  6 28 80][0m
+[32m06-28 19:49:58[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 6, Train End. Total Time: 15.10s[0m
+[32m06-28 19:50:09[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 6] Test Accuracy: 1.00%[0m
+[32m06-28 19:50:09[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 7, Selected client : [98  3  7 79 64][0m
+[32m06-28 19:50:25[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 7, Train End. Total Time: 15.38s[0m
+[32m06-28 19:50:35[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 7] Test Accuracy: 1.02%[0m
+[32m06-28 19:50:35[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 8, Selected client : [ 2 15 72 21 89][0m
+[32m06-28 19:50:50[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 8, Train End. Total Time: 15.22s[0m
+[32m06-28 19:51:00[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 8] Test Accuracy: 1.00%[0m
+[32m06-28 19:51:00[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 9, Selected client : [96 77 98 53 32][0m
+[32m06-28 19:51:16[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 9, Train End. Total Time: 15.12s[0m
+[32m06-28 19:51:26[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 9] Test Accuracy: 0.89%[0m
+[32m06-28 19:51:26[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 10, Selected client : [81 50 91 56 75][0m
+[32m06-28 19:51:42[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 10, Train End. Total Time: 15.22s[0m
+[32m06-28 19:51:52[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 10] Test Accuracy: 1.00%[0m
+[32m06-28 19:51:52[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 11, Selected client : [69 62 84 98 19][0m
+[32m06-28 19:52:07[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 11, Train End. Total Time: 15.03s[0m
+[32m06-28 19:52:18[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 11] Test Accuracy: 1.08%[0m
+[32m06-28 19:52:18[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 12, Selected client : [18 15 62 73  8][0m
+[32m06-28 19:52:34[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 12, Train End. Total Time: 15.52s[0m
+[32m06-28 19:52:45[0m [34mtrainers.base_trainer[15760][0m [33m[Epoch 12] Test Accuracy: 1.00%[0m
+[32m06-28 19:52:45[0m [34mtrainers.base_trainer[15760][0m [30mGlobal epoch 13, Selected client : [79 63 77 59 31][0m
+[32m06-28 19:53:08[0m [34mtrainers.base_trainer[12024][0m [30mExp path : checkpoints\CIFAR100\dirichlet0.05\base[0m
+[32m06-28 19:53:09[0m [34mtrainers.base_trainer[12024][0m [30mTrainer: <class 'trainers.base_trainer.Trainer'>, client: <class 'clients.kfa_client.KFAClient'>, server: <class 'servers.kfa_server.KFAServer'>, evaler: <class 'evalers.base_evaler.Evaler'>[0m
+[32m06-28 19:53:19[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 0, Selected client : [26 86  2 55 75][0m
+[32m06-28 19:53:19[0m [34mclients.base_client[12024][0m [30mClass counts : [183  53  42  40  34  28  23  16  15  15  12   8   7   7   6   3   2   2
+   1   1   1   1][0m
+[32m06-28 19:53:23[0m [34mclients.base_client[12024][0m [30mClass counts : [147  74  72  37  35  23  17  15  13  12   9   8   7   7   6   5   5   4
+   3   1][0m
+[32m06-28 19:53:25[0m [34mclients.base_client[12024][0m [30mClass counts : [100  84  77  67  65  48  28  19   6   2   2   1   1][0m
+[32m06-28 19:53:28[0m [34mclients.base_client[12024][0m [30mClass counts : [114  67  66  48  43  37  32  29  18  10   7   7   6   6   4   2   1   1
+   1   1][0m
+[32m06-28 19:53:31[0m [34mclients.base_client[12024][0m [30mClass counts : [107  68  66  59  29  29  20  19  17  17  16  16   9   6   6   4   3   3
+   2   1   1   1   1][0m
+[32m06-28 19:53:34[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 0, Train End. Total Time: 14.63s[0m
+[32m06-28 19:53:43[0m [34mtrainers.base_trainer[12024][0m [33m[Epoch 0] Test Accuracy: 1.26%[0m
+[32m06-28 19:53:43[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 1, Selected client : [18 29 64 92 72][0m
+[32m06-28 19:53:57[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 1, Train End. Total Time: 13.87s[0m
+[32m06-28 19:54:06[0m [34mtrainers.base_trainer[12024][0m [33m[Epoch 1] Test Accuracy: 1.26%[0m
+[32m06-28 19:54:07[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 2, Selected client : [42 96 58 14 72][0m
+[32m06-28 19:54:21[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 2, Train End. Total Time: 13.89s[0m
+[32m06-28 19:54:30[0m [34mtrainers.base_trainer[12024][0m [33m[Epoch 2] Test Accuracy: 0.84%[0m
+[32m06-28 19:54:31[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 3, Selected client : [54 84 33 53  2][0m
+[32m06-28 19:54:45[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 3, Train End. Total Time: 14.00s[0m
+[32m06-28 19:54:54[0m [34mtrainers.base_trainer[12024][0m [33m[Epoch 3] Test Accuracy: 1.00%[0m
+[32m06-28 19:54:54[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 4, Selected client : [89 56 37 46  2][0m
+[32m06-28 19:55:08[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 4, Train End. Total Time: 13.95s[0m
+[32m06-28 19:55:18[0m [34mtrainers.base_trainer[12024][0m [33m[Epoch 4] Test Accuracy: 0.93%[0m
+[32m06-28 19:55:18[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 5, Selected client : [93 49 68 23  9][0m
+[32m06-28 19:55:32[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 5, Train End. Total Time: 13.88s[0m
+[32m06-28 19:55:41[0m [34mtrainers.base_trainer[12024][0m [33m[Epoch 5] Test Accuracy: 1.02%[0m
+[32m06-28 19:55:42[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 6, Selected client : [93 22  6 28 80][0m
+[32m06-28 19:55:56[0m [34mtrainers.base_trainer[12024][0m [30mGlobal epoch 6, Train End. Total Time: 14.10s[0m

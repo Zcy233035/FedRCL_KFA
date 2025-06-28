@@ -1,0 +1,4 @@
+## Server ##
+type: KFAServer
+kfa_damping: 0.001
+momentum: 0 

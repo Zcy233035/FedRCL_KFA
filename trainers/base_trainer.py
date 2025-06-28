@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Callable, Dict, Tuple, Union, List, Type, Any
+from typing import Callable, Dict, Tuple, Union, List, Type, Any, Optional, Sequence
 from argparse import Namespace
 from collections import defaultdict
 
@@ -27,7 +27,7 @@ from clients import Client
 from utils import DatasetSplit, DatasetSplitSubset, get_dataset
 from utils.logging_utils import AverageMeter
 
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, Dataset
 
 from utils import terminate_processes, initalize_random_seed, save_checkpoint
 from omegaconf import DictConfig,OmegaConf
@@ -49,7 +49,7 @@ class Trainer():
                  datasets: Dict,
                  device: torch.device,
                  args: DictConfig,
-                 multiprocessing: Dict = None,
+                 multiprocessing: Optional[Dict] = None,
                  **kwargs) -> None:
 
         self.args = args
@@ -128,9 +128,9 @@ class Trainer():
             }
             client.setup(**setup_inputs)
 
-            # Local Training
-            local_model, local_loss_dict = client.local_train(global_epoch=task['global_epoch'])
-            result_queue.put((local_model, local_loss_dict))
+            # Local Training: The return value may vary depending on the client type
+            results = client.local_train(global_epoch=task['global_epoch'])
+            result_queue.put(results)
             if not self.args.multiprocessing:
                 break
 
@@ -151,7 +151,7 @@ class Trainer():
                 p.start()
 
 
-        for epoch in range(self.start_round, self.global_rounds):
+        for epoch in (epoch_pbar := tqdm.tqdm(range(self.start_round, self.global_rounds), desc="Global Rounds")):
 
             self.lr_update(epoch=epoch)
 
@@ -164,14 +164,16 @@ class Trainer():
             else:
                 selected_client_ids = range(len(self.clients))
             logger.info(f"Global epoch {epoch}, Selected client : {selected_client_ids}")
+            epoch_pbar.set_postfix_str(f"Selected clients: {len(selected_client_ids)}")
 
             current_lr = self.lr
 
-            local_weights = defaultdict(list)
+            local_state_dicts = []
             local_loss_dicts = defaultdict(list)
             local_deltas = defaultdict(list)
+            kronecker_factors_list = []
+            data_sizes = []
 
-            local_models = []
 
             # FedACG lookahead momentum
             if self.args.server.get('FedACG'):
@@ -181,7 +183,8 @@ class Trainer():
 
             # Client-side
             start = time.time()
-            for i, client_idx in enumerate(selected_client_ids):
+            for i, client_idx in enumerate(client_pbar := tqdm.tqdm(selected_client_ids, desc="Clients", leave=False)):
+                client_pbar.set_postfix_str(f"C_ID: {client_idx}")
                 task_queue_input = {
                     'state_dict': self.model.state_dict(),
                     'client_idx': client_idx,
@@ -197,42 +200,74 @@ class Trainer():
                     task_queue.put(task_queue_input)
                     self.local_update(self.device, task_queue, result_queue)
 
-                    local_state_dict, local_loss_dict = result_queue.get()
+                    # --- Result handling for non-multiprocessing ---
+                    result = result_queue.get()
+
+                    # Unpack results based on client type
+                    if self.args.client.type == 'KFAClient':
+                        local_state_dict, local_loss_dict, kronecker_factors = result
+                        kronecker_factors_list.append(kronecker_factors)
+                    else: # Standard client
+                        local_state_dict, local_loss_dict = result
+
                     for loss_key in local_loss_dict:
                         local_loss_dicts[loss_key].append(local_loss_dict[loss_key])
 
-                    #local_state_dict = local_model.state_dict()
-                    local_models.append(local_state_dict)
-
-                    for param_key in local_state_dict:
-                        local_weights[param_key].append(local_state_dict[param_key])
-                        local_deltas[param_key].append(local_state_dict[param_key] - global_state_dict[param_key])
+                    local_state_dicts.append(local_state_dict)
+                    # --- End of result handling ---
 
 
             if self.args.multiprocessing:
                 for _ in range(len(selected_client_ids)):
                     # Retrieve results from the queue
                     result = result_queue.get()
-                    local_state_dict, local_loss_dict = result
+                    
+                    # Unpack results based on client type
+                    if self.args.client.type == 'KFAClient':
+                        local_state_dict, local_loss_dict, kronecker_factors = result
+                        kronecker_factors_list.append(kronecker_factors)
+                    else: # Standard client
+                        local_state_dict, local_loss_dict = result
+
                     for loss_key in local_loss_dict:
                         local_loss_dicts[loss_key].append(local_loss_dict[loss_key])
 
-                    local_models.append(local_state_dict)
+                    local_state_dicts.append(local_state_dict)
 
-                    # If you want to save gpu memory, make sure that weights are not allocated to GPU
-                    for param_key in local_state_dict:
-                        local_weights[param_key].append(local_state_dict[param_key])
-                        local_deltas[param_key].append(local_state_dict[param_key] - global_state_dict[param_key])
+            # NOTE: Non-multiprocessing path is removed for simplicity of this modification.
+            # For a full implementation, the result unpacking logic should also be applied to the non-mp path.
+            # This note is now obsolete as we are fixing the non-mp path.
 
             logger.info(f"Global epoch {epoch}, Train End. Total Time: {time.time() - start:.2f}s")
 
+            # --- Aggregation Step ---
+            # Calculate client weights based on data size
+            local_datasets = [DatasetSplit(self.datasets['train'], idxs=self.local_dataset_split_ids[client_id]) for client_id in selected_client_ids]
+            client_weights = torch.tensor([len(d) for d in local_datasets], dtype=torch.float32)
+            client_weights = client_weights / client_weights.sum()
 
-            # Server-side
-            updated_global_state_dict = self.server.aggregate(local_weights, local_deltas,
-                                                              selected_client_ids, copy.deepcopy(global_state_dict), current_lr)
+
+            # Server-side aggregation
+            if self.args.server.type == 'KFAServer':
+                updated_global_state_dict = self.server.aggregate(
+                    local_state_dicts=local_state_dicts,
+                    kronecker_factors_list=kronecker_factors_list,
+                    client_weights=client_weights.tolist()
+                )
+            else:
+                # Fallback to original aggregation method for other servers
+                local_weights = defaultdict(list)
+                local_deltas = defaultdict(list)
+                for state_dict in local_state_dicts:
+                    for param_key, param_val in state_dict.items():
+                        local_weights[param_key].append(param_val)
+                        local_deltas[param_key].append(param_val - global_state_dict[param_key])
+                
+                updated_global_state_dict = self.server.aggregate(local_weights, local_deltas,
+                                                                  selected_client_ids, copy.deepcopy(global_state_dict), current_lr)
+            
             self.model.load_state_dict(updated_global_state_dict)
 
-            local_datasets = [DatasetSplit(self.datasets['train'], idxs=self.local_dataset_split_ids[client_id]) for client_id in selected_client_ids]
 
             # Logging
             wandb_dict = {loss_key: np.mean(local_loss_dicts[loss_key]) for loss_key in local_loss_dicts}
@@ -253,7 +288,7 @@ class Trainer():
             # Terminate Processes
             terminate_processes(task_queues, processes)
 
-        return
+        return {}
 
     def lr_update(self, epoch: int) -> None:
         self.lr = self.args.trainer.local_lr * (self.local_lr_decay) ** (epoch)
@@ -287,14 +322,14 @@ class Trainer():
         return
 
 
-    def wandb_log(self, log: Dict, step: int = None):
+    def wandb_log(self, log: Dict, step: Optional[int] = None):
         if self.args.wandb:
             wandb.log(log, step=step)
 
     def validate(self, epoch: int, ) -> Dict:
-        return
+        return {}
 
-    def evaluate(self, epoch: int, local_datasets: List[torch.utils.data.Dataset] = None) -> Dict:
+    def evaluate(self, epoch: int, local_datasets: Optional[Sequence[Dataset]] = None) -> Dict:
 
         results = self.evaler.eval(model=copy.deepcopy(self.model), epoch=epoch)
         acc = results["acc"]

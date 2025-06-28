@@ -33,7 +33,7 @@ log_dir: './checkpoints'
 #################### Data Split ####################
 split:
   mode: 'dirichlet'
-  alpha: 0.3
+  alpha: 0.05
   class_per_client: 0 # only for skew mode
   unbalanced: False
   overlap_ratio: 0.0
@@ -55,6 +55,7 @@ analysis: False
 
 
 defaults:
+  - _self_
   - trainer: base
   - client: base
   - evaler: base
@@ -62,5 +63,5 @@ defaults:
   - server: base
   - model: resnet18
   - override hydra/job_logging: colorlog_custom
-  - override hydra/hydra_logging: colorlog
+  - override hydra/hydra_logging: default
 
